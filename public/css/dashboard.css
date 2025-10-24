@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3a47a0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffca28;
+}
+
+.content {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.content h1 {
+    color: #3a47a0;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #555;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto 80px auto;
+}
+
+.dashboard-container {
+    background-color: #e6efff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.dashboard-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #3a47a0;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.2s ease;
+}
+
+.dashboard-container a:hover {
+    color: #1d2e99;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+}
+
+.footer-top {
+    background-color: #ffca28;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.footer-top img {
+    max-height: 100px;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-zona {
+    width: 100px;
+    height: auto;
+}
+
+.footer-bottom {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 30px 100px;
+  flex-wrap: wrap;
+}
+
+.footer-copy p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fff;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .content h1 {
+        font-size: 1.1rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-contact p {
+        text-align: center;
+    }
+}
