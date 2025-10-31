@@ -2,179 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
-    color: #222;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    background-color: #3a47a0;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 60px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffca28;
-}
-
-.content {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.content h1 {
-    color: #3a47a0;
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.content p {
-    color: #555;
-    font-size: 16px;
+    font-family: 'Segoe UI';
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    width: 80%;
-    max-width: 1000px;
-    margin: 30px auto 80px auto;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
 }
 
-.dashboard-container {
-    background-color: #e6efff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+aside {
+    width: 240px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+aside h1 {
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
-    padding: 30px 15px;
+    margin-bottom: 20px;
 }
 
-.dashboard-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+aside ul li a i {
+    margin-right: 15px;
+    font-size: 18px;
 }
 
-.dashboard-container a {
-    display: inline-block;
-    text-decoration: none;
-    color: #3a47a0;
+nav {
+    padding: 0 10px;
+}
+
+nav h2 {
+    font-size: 14px;
     font-weight: 600;
-    font-size: 1.05rem;
-    transition: color 0.2s ease;
+    color: #606060;
+    margin: 16px 10px 8px;
+    text-transform: uppercase;
 }
 
-.dashboard-container a:hover {
-    color: #1d2e99;
+nav ul {
+    list-style: none;
 }
 
-footer {
-    font-family: Arial, sans-serif;
-    color: white;
-    position: relative;
+nav ul li {
+    margin: 2px 0;
 }
 
-.footer-top {
-    background-color: #ffca28;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
-}
-
-.footer-top img {
-    max-height: 100px;
-}
-
-.footer-left,
-.footer-right {
+nav ul li a {
     display: flex;
     align-items: center;
-    justify-content: center;
+    text-decoration: none;
+    color: #030303;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
 }
 
-.logo-zona {
-    width: 100px;
-    height: auto;
+nav ul li a:hover {
+    background-color: #f2f2f2;
 }
 
-.footer-bottom {
-  background-color: #333;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  padding: 30px 100px;
-  flex-wrap: wrap;
+nav ul li a.active {
+    background-color: #e5e5e5;
+    font-weight: bold;
 }
 
-.footer-copy p {
-  font-size: 14px;
-  color: #fff;
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
 }
 
-.footer-contact p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #fff;
-  text-align: right;
+main {
+    margin-left: 240px;
+    flex: 1;
+    padding: 20px;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .content h1 {
-        font-size: 1.1rem;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .footer-contact p {
-        text-align: center;
-    }
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }
+
+header h2 {
+    font-size: 20px;
+    color: #202020;
+}
+
+header p {
+    color: #606060;
+}
+

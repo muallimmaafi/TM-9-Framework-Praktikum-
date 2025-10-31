@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #222;
+}
+
+header {
+    background-color: #3a47a0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffca28;
+}
+
+.layanan-header {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.layanan-header h1 {
+    color: #000;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.layanan-header p {
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.layanan-isi {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 15px;
+    max-width: 1200px;
+}
+
+.layanan-isi h2 {
+    color: #3a47a0;
+    border-left: 5px solid #3a47a0;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.layanan-isi p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.layanan-isi ul {
+    margin-left: 40px;
+    list-style-type: disc;
+}
+
+.layanan-isi li {
+    margin-bottom: 6px;
+}
+
+.layanan-tambahan {
+    text-align: center;
+    margin: 50px 0 80px 0;
+    font-size: 1rem;
+}
+
+.layanan-tambahan a {
+    color: #3a47a0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    header.navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .layanan-isi {
+        padding: 25px 20px;
+    }
+
+    .layanan-header h1 {
+        font-size: 2rem;
+    }
+}

@@ -3,87 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="icon" type="image/png" href="{{ asset('pictures/unairbiru.png') }}">
+    <title>Dashboard Admin</title>
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
-
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="{{ asset('pictures/unairbiru.png') }}" alt="Logo Unair" height="100">
-        </div>
-
-        <nav class="nav-links">
-            <a href="{{ route('dashboard') }}">Dashboard</a>
-            <a href="{{ route('struktur') }}">Struktur Organisasi</a>
-            <a href="{{ route('layanan') }}">Layanan Umum</a>
-            <a href="{{ route('visi') }}">Visi, Misi, dan Tujuan</a>
-        </nav>
-    </header> 
-
-    <div class="content">
-        <h1>Halo, Admin</h1>
-        <p>Selamat Datang di halaman dashboard Rumah Sakit Hewan Pendidikan Universitas Airlangga</p>
-    </div>
-
     <div class="container">
-        <div class="dashboard-container">
-            <a href="JenisHewan.php">Daftar Jenis Hewan</a>
-        </div>
+        <aside>
+            <h1>Rumah Sakit Hewan Pendidikan Universitas Airlangga</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ route('admin.jenis-hewan.index') }}"><i class="bi bi-list-ul"></i> Daftar Jenis Hewan</a></li>
+                    <li><a href="{{ route('admin.ras-hewan.index') }}"><i class="bi bi-tags"></i> Daftar Ras Hewan</a></li>
+                    <li><a href="{{ route('admin.kategori.index') }}"><i class="bi bi-grid"></i> Daftar Kategori</a></li>
+                    <li><a href="{{ route('admin.kategori-klinis.index') }}"><i class="bi bi-heart-pulse"></i> Daftar Kategori Klinis</a></li>                    
+                    <li><a href="{{ route('admin.kode-tindakan-terapi.index') }}"><i class="bi bi-capsule"></i> Kode Tindakan Terapi</a></li>
+                    <li><a href="{{ route('admin.pet.index') }}"><i class="bi bi-heart"></i> Daftar Pet</a></li>
+                    <li><a href="{{ route('admin.role.index') }}"><i class="bi bi-person-badge"></i> Daftar Role</a></li>
+                    <li><a href="{{ route('admin.user.index') }}"><i class="bi bi-people"></i> Daftar User</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-        <div class="dashboard-container">
-            <a href="RasHewan.php">Daftar Ras Hewan</a>
-        </div>
-
-        <div class="dashboard-container">
-            <a href="Kategori.php">Daftar Kategori</a>
-        </div>
-
-        <div class="dashboard-container">
-            <a href="KategoriKlinis.php">Daftar Kategori Klinis</a>
-        </div>
-
-        <div class="dashboard-container">
-            <a href="KodeTindakanTerapi.php">Kode Tindakan Terapi</a>
-        </div>
-    
-        <div class="dashboard-container">
-            <a href="Pet.php">Daftar Pet</a>
-        </div>
-
-        <div class="dashboard-container">
-            <a href="Role.php">Daftar Role</a>
-        </div>
-
-        <div class="dashboard-container">
-            <a href="User.php">Daftar User</a>
-        </div>
+        <main>
+            <header>
+                <h2>Halo, Admin</h2>
+                <p>Selamat Datang di Dashboard Rumah Sakit Hewan Pendidikan Universitas Airlangga</p>
+            </header>
+        </main>
     </div>
-
-    <br>
-
-    <footer>
-        <div class="footer-top">
-            <div class="footer-right">
-                <img src="{{ asset('pictures/zona-integritas-unair.png') }}" alt="Logo Zona Integritas Unair" width="200">
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="footer-copy">
-                <p>Copyright 2024 Universitas Airlangga. All Rights Reserved</p>
-            </div>
-
-            <div class="footer-contact">
-                <p><strong>RUMAH SAKIT HEWAN PENDIDIKAN</strong><br>
-                GEDUNG RS HEWAN PENDIDIKAN<br>
-                rshp@fkh.unair.ac.id<br>
-                Telp : 031 5927832<br>
-                Kampus C Universitas Airlangga<br>
-                Surabaya 60115, Jawa Timur</p>
-            </div>
-        </div>
-    </footer>    
 </body>
 </html>

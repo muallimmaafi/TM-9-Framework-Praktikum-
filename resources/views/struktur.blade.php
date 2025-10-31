@@ -9,19 +9,6 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="{{ asset('pictures/unairbiru.png') }}" alt="Logo Unair" height="100">
-        </div>
-
-        <nav class="nav-links">
-            <a href="{{ route('dashboard') }}">Dashboard</a>
-            <a href="{{ route('struktur') }}">Struktur Organisasi</a>
-            <a href="{{ route('layanan') }}">Layanan Umum</a>
-            <a href="{{ route('visi') }}">Visi, Misi, dan Tujuan</a>
-        </nav>
-    </header> 
-
     <section class="hero">
         <h1>Struktur Pimpinan Rumah Sakit Hewan Pendidikan Universitas Airlangga</h1>
         <p>Struktur Pimpinan Rumah Sakit Hewan Pendidikan Universitas Airlangga terdiri dari berbagai posisi diantaranya:</p>
@@ -35,7 +22,7 @@
 
         <div class="pimpinan-row">
             <div class="pimpinan-info">
-                <img src="{{ asset('pictures/direktur.jpg') }}" alt="Direktur">
+                <img src="{{ asset('pictures/direktur.jpg') }}" alt="Direktur" width="100">
                 <span class="pimpinan-name">Dr. Ira Sari Yudaniayanti, M.P., drh.</span>
             </div>
             <div class="pimpinan-jabatan">Direktur</div>
@@ -43,7 +30,7 @@
 
         <div class="pimpinan-row">
             <div class="pimpinan-info">
-                <img src="{{ asset('pictures/wakil-direktur1.jpg') }}" alt="Wakil Direktur 1">
+                <img src="{{ asset('pictures/wakil-direktur1.jpg') }}" alt="Wakil Direktur 1" width="100">
                 <span class="pimpinan-name">Dr. Nusdianto Triakoso, M.P., drh.</span>
             </div>
             <div class="pimpinan-jabatan">Wakil Direktur 1</div>
@@ -51,7 +38,7 @@
 
         <div class="pimpinan-row">
             <div class="pimpinan-info">
-                <img src="{{ asset('pictures/wakil-direktur2.jpg') }}" alt="Wakil Direktur 2">
+                <img src="{{ asset('pictures/wakil-direktur2.jpg') }}" alt="Wakil Direktur 2" width="100">
                 <span class="pimpinan-name">Dr. Miyayu Soneta S., M.Vet., drh.</span>
             </div>
             <div class="pimpinan-jabatan">Wakil Direktur 2</div>

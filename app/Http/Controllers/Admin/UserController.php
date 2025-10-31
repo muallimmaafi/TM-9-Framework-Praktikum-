@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        $users = User::with('role')->get();
+        $users = User::with('roleUser.role')->get();
 
         return view('admin.user.index', compact('users'));
     }

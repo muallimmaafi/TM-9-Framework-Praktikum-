@@ -14,4 +14,14 @@ class Pemilik extends Model
     {
         return $this->belongsTo(User::class, 'iduser', 'iduser');
     }
+
+    public function pemilik()
+    {
+        return $this->hasOne(Pemilik::class, 'iduser', 'iduser');
+    }
+
+    public function roleUser()
+    {
+        return $this->hasMany(RoleUser::class, 'iduser', 'iduser');
+    }
 }
